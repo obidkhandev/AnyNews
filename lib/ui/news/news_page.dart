@@ -36,7 +36,7 @@ class _NewsPageState extends State<NewsPage> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => NewListPage(),
+                        builder: (context) => const NewListPage(),
                       ),
                     );
                   },
@@ -48,7 +48,7 @@ class _NewsPageState extends State<NewsPage> {
                   itemCount: 4,
                   itemBuilder: (BuildContext context, int itemIndex,
                           int pageViewIndex) =>
-                      MyCard(),
+                      const MyCard(),
                   options: CarouselOptions(
                     height: height(context) * 0.55,
                     aspectRatio: 16 / 9,
@@ -57,8 +57,8 @@ class _NewsPageState extends State<NewsPage> {
                     enableInfiniteScroll: true,
                     reverse: false,
                     autoPlay: true,
-                    autoPlayInterval: Duration(seconds: 3),
-                    autoPlayAnimationDuration: Duration(milliseconds: 800),
+                    autoPlayInterval:const  Duration(seconds: 3),
+                    autoPlayAnimationDuration: const Duration(milliseconds: 800),
                     autoPlayCurve: Curves.fastOutSlowIn,
                     enlargeCenterPage: true,
                     enlargeFactor: 0.3,
@@ -68,7 +68,7 @@ class _NewsPageState extends State<NewsPage> {
               Padding(
                 padding: EdgeInsets.symmetric(
                     vertical: 10, horizontal: width(context) * 0.05),
-                child: MyTitle(),
+                child: const MyTitle(),
               ),
               Container(
                 padding:
@@ -96,7 +96,7 @@ class _NewsPageState extends State<NewsPage> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => ReadMorePage(),
+                      builder: (context) => const ReadMorePage(),
                     ),
                   );
                 },

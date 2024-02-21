@@ -42,7 +42,7 @@ class _MyAppBarState extends State<MyAppBar> {
           width: 6,
           height: 12,
         ),
-        Spacer(),
+        const Spacer(),
         SvgPicture.asset(
           "assets/icons/fa-solid_search.svg",
           height: 26,

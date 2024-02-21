@@ -15,7 +15,7 @@ class MyRating extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(
+      margin: const EdgeInsets.symmetric(
         horizontal: 20,
       ),
       height: 26,
@@ -31,6 +31,7 @@ class MyRating extends StatelessWidget {
             "assets/icons/Vector (3).svg",
             height: 14,
             width: 14,
+            // ignore: deprecated_member_use
             color: fireColor,
           ),
           Text(

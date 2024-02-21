@@ -11,12 +11,12 @@ class MyBottomNavBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: height(context) * 0.09,
-      padding: EdgeInsets.only(bottom: 10),
+      padding: const EdgeInsets.only(bottom: 10),
       width: double.infinity,
-      decoration: BoxDecoration(color: Color(0xffFFFFFF), boxShadow: [
+      decoration: BoxDecoration(color: const Color(0xffFFFFFF), boxShadow: [
         BoxShadow(
           blurRadius: 16,
-          color: Color(0xff000000).withOpacity(.12),
+          color: const Color(0xff000000).withOpacity(.12),
         )
       ]),
       child: const Row(

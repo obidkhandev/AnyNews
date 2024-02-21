@@ -14,7 +14,7 @@ class ReadMorePage extends StatelessWidget {
           const MyCart(),
           Expanded(
               child: ListView(
-            padding: EdgeInsets.all(20),
+            padding: const EdgeInsets.all(20),
             children: [
               const MyTitle(),
               const SizedBox(height: 20),

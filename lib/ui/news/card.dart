@@ -15,7 +15,7 @@ class MyCard extends StatelessWidget {
 
       decoration: BoxDecoration(
         color: Colors.red,
-        image: DecorationImage(
+        image: const DecorationImage(
           fit: BoxFit.cover,
           image: AssetImage("assets/images/Rectangle 204.png"),
         ),
@@ -30,14 +30,14 @@ class MyCard extends StatelessWidget {
               alignment: Alignment.center,
               height: height(context) * 0.04,
               width: height(context) * 0.15,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.purple,
                 borderRadius: BorderRadius.only(
                   bottomRight: Radius.circular(16),
                   topLeft: Radius.circular(16),
                 ),
               ),
-              child: Text(
+              child: const Text(
                 "Technology",
                 style: TextStyle(
                   color: Colors.white,
@@ -46,18 +46,18 @@ class MyCard extends StatelessWidget {
               ),
             ),
           ),
-          Spacer(),
-          MyRating(
+          const Spacer(),
+          const MyRating(
             color: Colors.white,
             detailColor: Colors.red,
           ),
           // SizedBox(height: 10),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
             child: Row(
               children: [
                 RichText(
-                  text: TextSpan(
+                  text: const TextSpan(
                     children: [
                       TextSpan(
                         text: "Sumanth\n",
@@ -78,12 +78,12 @@ class MyCard extends StatelessWidget {
                     ],
                   ),
                 ),
-                Spacer(),
-                Icon(
+                const Spacer(),
+                const Icon(
                   Icons.bookmark_border_rounded,
                   color: Colors.white,
                 ),
-                SizedBox(width: 15),
+                const SizedBox(width: 15),
                 SvgPicture.asset(
                   "assets/icons/share.svg",
                   height: 20,
