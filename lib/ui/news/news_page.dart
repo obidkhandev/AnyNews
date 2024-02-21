@@ -1,12 +1,13 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:my_project/constants.dart';
 import 'package:my_project/helper/helper_functions.dart';
 import 'package:my_project/ui/news/card.dart';
 import 'package:my_project/ui/news_list_view/news_list_view_page.dart';
+import 'package:my_project/ui/read_more/read_more.dart';
 import 'package:my_project/widget/my_app_bar.dart';
 import 'package:my_project/widget/my_plus.dart';
 import 'package:my_project/widget/nav_bar.dart';
+import 'package:my_project/widget/title.dart';
 
 class NewsPage extends StatefulWidget {
   const NewsPage({super.key});
@@ -67,15 +68,7 @@ class _NewsPageState extends State<NewsPage> {
               Padding(
                 padding: EdgeInsets.symmetric(
                     vertical: 10, horizontal: width(context) * 0.05),
-                child: const Text(
-                  "No, staring at a screen won’t damage your eyes",
-                  style: TextStyle(
-                    color: kTextPrimarycolor,
-                    fontWeight: FontWeight.w800,
-                    fontSize: 24,
-                  ),
-                  textAlign: TextAlign.start,
-                ),
+                child: MyTitle(),
               ),
               Container(
                 padding:
@@ -103,7 +96,7 @@ class _NewsPageState extends State<NewsPage> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => NewListPage(),
+                      builder: (context) => ReadMorePage(),
                     ),
                   );
                 },
@@ -122,3 +115,5 @@ class _NewsPageState extends State<NewsPage> {
     );
   }
 }
+
+

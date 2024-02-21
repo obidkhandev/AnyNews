@@ -47,7 +47,10 @@ class MyCard extends StatelessWidget {
             ),
           ),
           Spacer(),
-          MyRating(),
+          MyRating(
+            color: Colors.white,
+            detailColor: Colors.red,
+          ),
           // SizedBox(height: 10),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
@@ -93,4 +96,3 @@ class MyCard extends StatelessWidget {
     );
   }
 }
-
