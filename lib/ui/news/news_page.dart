@@ -73,7 +73,7 @@ class _NewsPageState extends State<NewsPage> {
               Container(
                 padding:
                     EdgeInsets.symmetric(horizontal: width(context) * 0.05),
-                child: Text(
+                child: const Text(
                   "I’m here to quell your health concerns: staring screen doesn’t damage your eyes...",
                   style: TextStyle(
                     color: Color(0xffA0A5B5),
@@ -100,7 +100,7 @@ class _NewsPageState extends State<NewsPage> {
                     ),
                   );
                 },
-                child: Text(
+                child: const Text(
                   "View more",
                   style: TextStyle(
                     color: Colors.red,

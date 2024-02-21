@@ -59,7 +59,7 @@ class ReadMorePage extends StatelessWidget {
                     "assets/icons/ant-design_field-time-outlined.svg",
                     height: 26,
                   ),
-                  Text(
+                  const Text(
                     "5 min",
                     style: TextStyle(
                       color: Colors.red,
@@ -68,10 +68,10 @@ class ReadMorePage extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(height: 10),
-              Divider(),
-              SizedBox(height: 20),
-              Text(
+              const SizedBox(height: 10),
+              const Divider(),
+              const SizedBox(height: 20),
+              const Text(
                 """
 I’m here to quell your health concerns: staring at a screen doesn’t damage your eyes. They won’t make you go blind, and your doctor isn’t going to worry about your health if he or she hears that you’re spending a lot of time in front of them. However, you might feel uncomfortable after a long time in front of a
 won’t make you go blind, and your doctor isn’t going to worry about your health if he or she hears that you’re spending a lot of time in front of a won't make you go blind, and your doctor isn't going to worry about your health if he or she 

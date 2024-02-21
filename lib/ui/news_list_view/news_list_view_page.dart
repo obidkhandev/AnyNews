@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:my_project/helper/helper_functions.dart';
+import 'package:my_project/model/category.dart';
 import 'package:my_project/widget/my_app_bar.dart';
 import 'package:my_project/widget/my_plus.dart';
 import 'package:my_project/widget/nav_bar.dart';
@@ -34,30 +35,7 @@ class NewListPage extends StatelessWidget {
                   shrinkWrap: true,
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   itemBuilder: (context, index) {
-                    List<String> myImgPath = [
-                      "assets/images/Rectangle 151.png",
-                      "assets/images/Rectangle 152.png",
-                      "assets/images/Rectangle 153.png",
-                      "assets/images/Rectangle 154.png",
-                      "assets/images/Rectangle 155.png",
-                      "assets/images/Rectangle 156.png",
-                    ];
-                    List<String> category = [
-                      "Technology",
-                      "Health",
-                      "Science",
-                      "Fitness",
-                      "Technology",
-                      "Technology",
-                    ];
-                    List<Color> categoryColor = [
-                      Colors.blue,
-                      Colors.green,
-                      Color(0xff003B72),
-                      Color(0xffC121FA),
-                      Colors.blue,
-                      Colors.blue,
-                    ];
+                    
                     return Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -76,16 +54,16 @@ class NewListPage extends StatelessWidget {
                                 image: DecorationImage(
                                   fit: BoxFit.fill,
                                   image: AssetImage(
-                                    myImgPath[index],
+                                    category[index].image,
                                   ),
                                 ),
                               ),
                             ),
                             Text(
-                              category[index],
-                              style: TextStyle(color: categoryColor[index]),
+                              category[index].name,
+                              style: TextStyle(color: category[index].textColor),
                             ),
-                            SizedBox(height: 10),
+                            const SizedBox(height: 10),
                           ],
                         ),
                         Expanded(
@@ -95,7 +73,7 @@ class NewListPage extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               // mainAxisSize: MainAxisSize.min,
                               children: [
-                                Text(
+                                const Text(
                                   "Let’s settle the debate: IOS vs\nAndroidz Consumer verdict",
                                   style: TextStyle(
                                     fontSize: 18,
@@ -107,7 +85,7 @@ class NewListPage extends StatelessWidget {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
                                   children: [
-                                    Text(
+                                    const Text(
                                       "10mins",
                                       style:
                                           TextStyle(color: Color(0xffA0A0A0)),
